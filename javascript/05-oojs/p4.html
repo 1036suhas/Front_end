@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oojs</title>
+</head>
+<body>
+    <center>
+        <h1>by using an object constructor</h1>
+    </center>
+    <hr>
+    <h3>Example-1</h3>
+    <script>
+        let empDetails1 = new Object({firstName:"suahs",lastName:"raghavan",fullName : function(){return this.firstName +" "+this.lastName}
+    });
+
+    document.write(typeof empDetails1 +"<br")
+    document.write( empDetails1.firstName +"<br")
+    document.write( empDetails1.lastName +"<br")
+    document.write( empDetails1.fullname() +"<br")
+    </script>
+    <hr>
+
+    <h3>Example-2</h3>
+    <script>
+        function studDetails(firstName, lastName){
+            console.log(`firstName = `, firstName);
+            console.log(`lastName = `, lastName);
+
+            let fn, ln, fullName;
+
+            fn = firstName;
+            ln = lastName;
+
+            console.log(`fn = `,fn);
+            console.log(`ln = `,ln )
+
+            console.log(fullName);
+        }
+        let stud = studDetails ("HTML","HTML-5");
+        console.log(typeof stud);
+
+        console.log(`this.fn = `, stud.fn);
+        console.log(`this.ln = `, stud.ln);
+        
+    </script>
+
+</body>
+</html>

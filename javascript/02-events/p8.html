@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #heading {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <center id="heading">
+        <h1 id="left"></h1>
+        <h1>Video Events</h1>
+        <h1 id="right"></h1>
+    </center>
+    <hr>
+
+    <center>
+        <video id="nature" onseeking="videoSeeking()" onvolumechange="volumeChanged()" onpause="videoPaused()"
+            onplay="videoPlayed()" controls autoplay Loop muted>
+            <source src="assests/media/nature.mp4">
+        </video>
+    </center>
+
+    <form onsubmit="formSubmited()" action="" onreset="reseted()">
+        <label onfocusin="" for="">Full Name</label>
+        <input id="fullName" type="text" onchange="writeTop()" onfocus="focusing()" onblur="bluring()"><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <script>
+        document.getElementById("nature").height = "300"
+
+
+        function videoPaused() {
+            document.getElementById("left").innerText = "Video Paused"
+            document.getElementById("right").innerText = "Video Paused"
+            document.getElementById("left").style.color = "red"
+            document.getElementById("right").style.color = "red"
+        }
+        function videoPlayed() {
+            document.getElementById("left").innerText = "Video Played"
+            document.getElementById("right").innerText = "Video Played"
+            document.getElementById("left").style.color = "green"
+            document.getElementById("right").style.color = "green"
+        }
+        function volumeChanged() {
+            document.getElementById("left").innerText = "Volume Changed"
+            document.getElementById("right").innerText = "Volume Change"
+            document.getElementById("left").style.color = "blue"
+            document.getElementById("right").style.color = "blue"
+        }
+        function videoSeeking() {
+            document.getElementById("left").innerText = "Video Seeking"
+            document.getElementById("right").innerText = "Video Seeking"
+            document.getElementById("left").style.color = "violet"
+            document.getElementById("right").style.color = "violet"
+        }
+ 
+/* Form */
+
+ function focusing() {
+            document.getElementById("fullName").style.border = "3px solid black"
+        }
+
+        function bluring() {
+            document.getElementById("fullName").style.border = "1px solid black"
+        }
+
+        function writeTop() {
+            let value = document.getElementById("fullName").value
+            document.getElementById("left").innerHTML = value
+            document.getElementById("right").innerHTML = value
+            document.getElementById("left").style.color = "pink"
+            document.getElementById("right").style.color = "pink"
+        }
+
+        function formSubmited() {
+            alert("Details submitted successfully")
+        }
+
+        function reseted() {
+            alert("Details reseted successfully")
+        }
+
+       
+    </script>
+
+</body>
+
+</html>

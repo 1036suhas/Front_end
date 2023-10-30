@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>OOJS</title>
+</head>
+<body>
+    <center>
+        <h1>Static  Method</h1>
+    </center>
+    <hr>
+
+    <script>
+        class Course {
+            constructor (title, dur){
+                document.write(`<h3> constructor called </h3>`);
+                this.title = title;
+                this.duration = dur;
+
+
+            }
+            static print (val) {
+                document.write(`<h3> $ {val} </h3>`);
+
+            }
+            courseInfo(){
+                document.write(`<h3> $ {this.title} ${this.duration} </h3>`);
+            }
+        }
+
+        let x = new Course("javaCript","1month");
+        Course.print ("be-practical");
+
+        x.courseInfo();
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+<body>
+    <script>
+        function loadHomePage(){
+            location.assign("https://youtube.com/");
+        }
+    </script>
+    <button type="button" onclick="loadHomePage();">loadHomePage</button>
+
+    <script>
+        function loadHomePage1(){
+            window.location.href =  "https://youtube.com/";
+            
+        }
+    </script>
+    <button type="button" onclick="loadHomePage1">loadHomePage1</button>
+
+    <script>
+        function forceReload() {
+            window.location.reload();
+
+        }
+    </script>
+    <button type="button" onclick="forceReload();">Reload Page</button>
+</body>
+</html>

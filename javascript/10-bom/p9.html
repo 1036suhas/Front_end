@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+<body>
+    <script>
+        function myFunction(){
+            alert("hello world");
+
+        }
+       // setInterval(myFunction(),1000);
+        //setInterval(myFunction(),1000);
+        
+    </script>
+    <button type="button" onclick="setTimeout(myFunction,1000)">Click Me</button>
+
+    <script>
+        function showTime(){
+            let time = new Date();
+            document.getElementById("clock").innerHTML = time.tolocalTimeString();
+        }
+        setInterval(showTime, 1000);
+    </script>
+</body>
+</html>

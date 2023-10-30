@@ -1,0 +1,75 @@
+/* P1.html */
+.commonAnimation{
+    padding: 20px;
+    border-radius: 5px;
+    margin: 30px;
+    height: 300px;
+}
+
+.commonAnimation>h1{
+    text-align: center;;
+    color: white;
+    font-size: 40px;
+    text-shadow: 3px 3px 3px black;
+}
+.animation1{
+    background: black;
+  /*  animation: bepractical;
+  animation-duration: 10s;
+  animation-iteration-count: infinite; */
+  animation: bepractical 10s infinite;
+}
+@keyframes bepractical {
+from{background:tomato;}
+to{background: blue;}
+}
+
+/* P2.html */
+.animation2{
+    background: url(../images/desk.jpg) no-repeat center;
+    background-size: 100%;
+    animation: animation_image 10s infinite;
+}
+
+@keyframes animation_image {
+    from{background: url(../images/desk.jpg) no-repeat top;color: red;}
+    to{background: url(../images/mobile.jpg no-repeat bottom);color:green}
+}
+
+/* P3.html */
+.animation3{
+    background: red;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 30px;
+    color: white;
+    position: absolute;
+    animation: cssAnimation3 10s infinite;
+}
+@keyframes cssAnimation3 {
+   
+    25%{
+        top: 0px;
+        left: 600px;
+        background: cadetblue;
+        color:red;
+    }
+    50%{
+        top:400px;
+        left:600px;
+        background: red;
+        color:indigo;
+    }
+    75%{
+        top:400px;
+        left: 0px;
+        background: gray;
+        color: turquoise;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background:greenyellow;
+        color: chocolate;
+    }
+}

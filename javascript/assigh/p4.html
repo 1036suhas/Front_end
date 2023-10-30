@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>JS DROPDOWN</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        .container{
+            background: url(assests/images/bgImg.jpg) no-repeat center;
+            background-size: cover;
+            height: 100vh;
+            opacity: 0.8;
+            color: crimson;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .item{
+            background-color: red;
+            color: black;
+            border-radius: 20px;
+            margin: 40px auto;
+        }
+        .item>label, .item>select{
+            font-size: 30px;
+            padding: 10px;
+        }
+        .item>select{
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        h1{
+            padding: 20px;
+            width: fit-content;
+            background-color: rgba(255, 255, 255, 0.8);
+            font-size: xx-large;
+            border-radius: 30px;
+        }
+    </style>
+  </head>
+  <body>
+  <section class="container">
+  
+   <div class="item">
+    <h1>Countries and its states</h1>
+   </div>
+   <div class="item">
+    <label for="country">Choose a country :</label>
+    <select name="country" id="country">
+      <option value="" selected>select from the list</option>
+      <option value="0">INDIA</option>
+      <option value="1">USA</option>
+      <option value="2">AUSTRALIA</option>
+      <option value="3">CANADA</option>
+      <option value="4">GERMANY</option>
+      <option value="5">CHINA</option>
+      <option value="6">BRAZIL</option>
+      <option value="7">JAPAN</option>
+      <option value="8">SOUTH KOREA</option>
+      <option value="9">MEXICO</option>
+    </select>
+   </div>  
+   <div class="item">
+    <label for="state">States</label>
+    <select name="state" id="state"></select>
+   </div>
+ </section>    
+    <script>
+        var data = [
+            {
+                country : "INDIA",
+                states : ["KARNATAKA", "ANDHRA PRADESH", "TAMIL NADU", "KERALA", "MAHARASHTRA"]
+            },
+            {
+                country : "USA",
+                states : ["FLORIDA", "CALIFORNIA", "IOWA", "MICHIGAN", "ALASKA"]
+            },
+            {
+                country : "AUSTRALIA",
+                states : ["VICTORIA", "QUEENSLAND", "NEW SOUTH WALES", "SOUTH AUSTRALIA", "WESTERN AUSTRALIA"]
+            },
+            {
+                country : "CANADA",
+                states : ["QUEBEC", "ONTARIO", "NEW BRUNSWICK", "MANITOBA", "BRITISH COLOMBIA"]
+            },
+            {
+                country : "GERMANY",
+                states : ["BAVARIA", "HESSEN", "SAXONY", "THURINGIA", "LOWERSAXONY"]
+            },
+            {
+                country : "CHINA",
+                states : ["ZHEJIANG", "HAINAN", "SICHUAN", "FUJIAN", "YUNNAN"]
+            },
+            {
+                country : "BRAZIL",
+                states : ["MATO GROSSO", "GOIAS", "PARANA", "CEARA", "MINAS GERAIS"]
+            },
+            {
+                country : "JAPAN",
+                states : ["HOKKAIDO", "CHUBU", "HYOGO", "ISHIKAWA", "EHIME"]
+            },
+            {
+                country : "SOUTH KOREA",
+                states : ["GANGWON", "GYEONGSANG", "SOUTH CHUNGCHEONGONG", "NORTH GYEONGSANG", "JEJU"]
+            },
+            {
+                country : "MEXICO",
+                states : ["JALISCO", "YUCATAN", "GUERRERO", "BAJA CALIFORNIA", "NUEVO LEON"]
+            },
+        ];
+         
+        var country = document.getElementById("country");
+        var state = document.getElementById('state');
+        country.addEventListener('change', ()=>{
+            var valCountry = country.value;
+                state.innerHTML = " ";
+                for (let i = 0; i < data[valCountry].states.length; i++) {
+                state.innerHTML += <option>${data[valCountry].states[i]}</option>;
+            }
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <center>
+        <h1>window.close() and window.open()</h1>
+    </center>
+    <hr>
+    
+    <button onclick="openHandler()">Open</button>
+    <button onclick="closeHandler()">Close</button>
+
+    <script>
+        var webStats;
+
+        function openHandler() {
+           webStats = open('https://ksrtc.com');
+
+        }
+        function closeHandler() {
+           console.log('webstats =',webStats);
+           webStats.close();
+            
+        }
+    </script>
+</body>
+</html>

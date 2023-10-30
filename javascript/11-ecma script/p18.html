@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMA</title>
+</head>
+<body>
+    <center>
+        <h1>oblect.defineproperty()</h1>
+    </center>
+    <hr>
+
+    <script>
+        "use strict";
+        var user ={};
+
+        console.log('before=', user);
+
+        Object.defineProperty(user,"name",{
+            value:"suhas",
+            writable:false
+        } );
+
+        try {
+            user.name = "suma";
+        } catch(err) {
+            console.log(err)
+        }
+        console.log('after= ',user);
+    </script>
+</body>
+</html>

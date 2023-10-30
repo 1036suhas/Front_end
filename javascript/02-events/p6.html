@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-EVENTS</title>
+    <style>
+        #txt {
+            background-color: teal;
+            color: white;
+            padding: 12px;
+            width: 50%;
+            height: 500px;
+            overflow: auto;
+        }
+        h4 {
+            padding: 10px;
+            background-color: crimson;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>onmousewheel() and onscroll()</h1>
+    </center>
+
+    <h4 id="output"></h4>
+
+    <div id="txt" onmousewheel="wheelHandler()" onscroll="wheelHandler()">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, illum non. Reprehenderit iure autem facere rem assumenda qui nesciunt nihil, quos quas deserunt labore pariatur nisi magni. Animi, illo mollitia!.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore reprehenderit ducimus perferendis, modi expedita, natus eum amet placeat consectetur, exercitationem omnis aut dolor voluptatibus obcaecati aliquam est. A, similique necessitatibus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos perferendis ullam dolorum earum atque excepturi optio, quo provident sunt quod maxime iure corporis obcaecati debitis animi voluptatibus est fugiat accusantium.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, illum non. Reprehenderit iure autem facere rem assumenda qui nesciunt nihil, quos quas deserunt labore pariatur nisi magni. Animi, illo mollitia!.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore reprehenderit ducimus perferendis, modi expedita, natus eum amet placeat consectetur, exercitationem omnis aut dolor voluptatibus obcaecati aliquam est. A, similique necessitatibus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos perferendis ullam dolorum earum atque excepturi optio, quo provident sunt quod maxime iure corporis obcaecati debitis animi voluptatibus est fugiat accusantium.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, illum non. Reprehenderit iure autem facere rem assumenda qui nesciunt nihil, quos quas deserunt labore pariatur nisi magni. Animi, illo mollitia!.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore reprehenderit ducimus perferendis, modi expedita, natus eum amet placeat consectetur, exercitationem omnis aut dolor voluptatibus obcaecati aliquam est. A, similique necessitatibus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos perferendis ullam dolorum earum atque excepturi optio, quo provident sunt quod maxime iure corporis obcaecati debitis animi voluptatibus est fugiat accusantium.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, illum non. Reprehenderit iure autem facere rem assumenda qui nesciunt nihil, quos quas deserunt labore pariatur nisi magni. Animi, illo mollitia!.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore reprehenderit ducimus perferendis, modi expedita, natus eum amet placeat consectetur, exercitationem omnis aut dolor voluptatibus obcaecati aliquam est. A, similique necessitatibus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos perferendis ullam dolorum earum atque excepturi optio, quo provident sunt quod maxime iure corporis obcaecati debitis animi voluptatibus est fugiat accusantium.
+    </p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, illum non. Reprehenderit iure autem facere rem assumenda qui nesciunt nihil, quos quas deserunt labore pariatur nisi magni. Animi, illo mollitia!.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore reprehenderit ducimus perferendis, modi expedita, natus eum amet placeat consectetur, exercitationem omnis aut dolor voluptatibus obcaecati aliquam est. A, similique necessitatibus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos perferendis ullam dolorum earum atque excepturi optio, quo provident sunt quod maxime iure corporis obcaecati debitis animi voluptatibus est fugiat accusantium.
+    </p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, illum non. Reprehenderit iure autem facere rem assumenda qui nesciunt nihil, quos quas deserunt labore pariatur nisi magni. Animi, illo mollitia!.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore reprehenderit ducimus perferendis, modi expedita, natus eum amet placeat consectetur, exercitationem omnis aut dolor voluptatibus obcaecati aliquam est. A, similique necessitatibus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos perferendis ullam dolorum earum atque excepturi optio, quo provident sunt quod maxime iure corporis obcaecati debitis animi voluptatibus est fugiat accusantium.
+    </p></div>
+
+    <script>
+        function wheelHandler(){
+            let element = document.getElementById("txt");
+            document.getElementById("output").innerHTML = element.scrollingTop + "px"
+        }
+    </script>
+</body>
+</html>

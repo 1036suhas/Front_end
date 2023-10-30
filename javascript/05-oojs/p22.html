@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOJS</title>
+</head>
+<body>
+    <center>
+        <h1>Parameter function constroctor</h1>
+    </center>
+    <hr>
+
+    <script>
+        function Course(ti, fe, du){
+            this.title=ti;
+            this.fee=fe;
+            this.duration=du;
+        }
+     let x1 = new  Course('javscript', "1month", 1234);
+
+     console.log('x1 = ', x1);
+
+       
+     document.write(`<h3> title = ${x1.title} </h3>`);
+        document.write(`<h3> fee = ${x1.fee} </h3>`);
+        document.write(`<h3> duration = ${x1.duration} </h3>`);
+
+        let x2 = new  Course('React',  1234,"1.5 month");
+
+     console.log('x2 = ', x2);
+
+       
+     document.write(`<h3> title = ${x1.title} </h3>`);
+        document.write(`<h3> fee = ${x1.fee} </h3>`);
+        document.write(`<h3> duration = ${x1.duration} </h3>`);
+    </script>
+
+    </script>
+</body>
+</html>

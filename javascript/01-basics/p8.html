@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-BASICS</title>
+</head>
+<body>
+    <center>
+        <h1>LOOPING STATEMENTS ..!</h1>
+    </center>
+    <hr>
+
+    <ol>
+        <li>While Loop</li>
+        <li>Do While Loop</li>
+        <li>For Loop</li>
+    </ol>
+    <hr>
+<h1> do While loop example..!</h1>
+    <input type="number" id="firstNumber" name="">
+    <button onclick="dowhileloop()">While Loop</button>
+    <script>
+
+
+        function dowhileloop() {
+            let firstNumber = +document.getElementById("firstNumber").value;
+            do {
+                document.write(firstNumber,"<br><hr>");
+                firstNumber++;
+
+            }while (firstNumber < 10);
+        }
+        
+    </script>
+</body>
+</html>

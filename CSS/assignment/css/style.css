@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+body{
+    display: flex;
+    background:green;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.mainpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.card{
+    position: relative;
+    width : 320px;
+    height: 450px;
+    margin: 30px;
+    background: blue;
+    border-radius: 20px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    box-shadow: 0 10px 0 rgb(211, 9, 9);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card:nth-child(1){
+    background-color: blueviolet;
+}
+.card:nth-child(2){
+  background-color: blue;
+}
+.card:nth-child(3){
+    background:palevioletred;
+}
+.icon{
+    position: relative;
+    width: 140px;
+    height: 140px;
+    background:green;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    
+    justify-content: center;
+    display: flex;
+}
+.icon::before{
+    content: '';
+    position :absolute;
+    top: 0;
+    left: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-top-right-radius: 50px;
+    box-shadow: 15px -15px 0 15px green;
+}
+.icon::after{
+    content: '';
+    position :absolute;
+    top: 0;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-top-left-radius: 50px;
+    box-shadow: -15px -15px 0 15px green;
+}
+.icon ion-icon{
+    color: orangered;
+    position: relative;
+    font-size: 6em;
+    
+}
+.content{
+    position: absolute;
+    width: 100%;
+    padding: 30px;
+    padding-top: 150px;
+
+}
+.content>p{
+    color:rgb(224, 222, 210);
+    padding: 60px;
+}

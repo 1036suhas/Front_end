@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-VALIDATION</title>
+    <style>
+      form {
+        border: 10px solid greenyellow;
+        width: 400px;
+        height: auto;
+        background-color: aqua;
+    
+      }
+      .cap {
+        font-size: x-large;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+      input {
+        padding: 8px;
+        width: 260px;
+        height: 25px;
+      }
+      select {
+        height: 43px;
+        padding: 8px;
+        width: 278px;
+      }
+      [type="submit"] {
+        color: white;
+        background-color: orange;
+        padding: 10px;
+        border: none;
+      }
+      [type="reset"] {
+        color: white;
+        background-color: gray;
+        padding: 10px;
+        border: none;
+      }
+      .radio,
+      .language {
+        width: 15px !important;
+        height: 20px;
+        margin-top: 4px;
+      }
+      button {
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <form autocomplete="on" onsubmit="validation(event)">
+        <p class="cap">Contact Form</p>
+
+        <label for="name"><b>First-Name</b></label>
+        <br /><br />
+        <input type="text" name="name" id="name" />
+        <h4 id="result1"></h4>
+
+        <label for="name"><b>Last-Name</b></label>
+        <br /><br />
+        <input type="text" name="name" id="name" />
+        <h4 id="result1"></h4>
+
+        <label for="email"><b>Email id</b></label>
+        <br /><br />
+        <input type="text" name="email" id="email" />
+        <h4 id="result2"></h4>
+
+        <label for="phone"><b>Phone-Number</b></label>
+        <br /><br />
+        <input type="text" name="phone" id="phone" />
+        <h4 id="result3"></h4>
+
+        <label for="city"><b>City</b></label>
+        <br /><br />
+        <select name="city" id="city">
+          <option value="0">Choose city name</option>
+          <option value="1">Bangalore</option>
+          <option value="2">Mysore</option>
+          <option value="3">Davanagere</option>
+          <option value="4">Hubli</option>
+          <option value="5">Belagavi</option>
+        </select>
+        <h4 id="result4"></h4>
+
+        <label for="gender"><b>Gender</b></label>
+        <br /><br />
+        <input class="radio" type="radio" name="gender" id="gender1" value="male" /><sup
+          >Male</sup
+        >
+        <input class="radio" type="radio" name="gender" id="gender2" value="female" /><sup
+          >Female</sup
+        >
+        <h4 id="result5"></h4>
+
+        <label for="language"><b>Languages (optional)</b></label>
+        <br /><br />
+        <input
+          class="language"
+          type="checkbox"
+          name="kannada"
+          id="kannada"
+          value="kannada"
+        />Kannada
+        <input
+          class="language"
+          type="checkbox"
+          name="english"
+          id="english"
+          value="english"
+        />English
+        <input
+          class="language"
+          type="checkbox"
+          name="hindi"
+          id="hindi"
+          value="hindi"
+        />Hindi
+       
+        <h4 id="result6"></h4>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </center>
+    <script>
+      function validation(event) {
+        event.preventDefault();
+
+        let fullName = document.getElementById("name").value;
+        let result1 = document.getElementById("result1");
+        let regex1 = /^[a-z]{3,}\s[a-z]|(\s[a-z]?)$/i;
+        if (fullName.length == 0) {
+          document.getElementById("result1").style.color = "red";
+          document.getElementById("result1").innerHTML =
+            "Name field cannot be empty";
+        } else {
+          if (regex1.test(fullName) === true) {
+            result1.style.color = "green";
+            result1.innerHTML = "Valid FullName";
+          } else {
+            result1.style.color = "red";
+            result1.innerHTML = "Invalid FullName";
+          }
+        }
+
+         
+        let email = document.getElementById("email").value;
+        let result2 = document.getElementById("result2");
+        let regex2 = /^\S+@\S+\.\S+$/;
+        if (email.length == 0) {
+          document.getElementById("result2").style.color = "red";
+          document.getElementById("result2").innerHTML =
+            "Email field cannot be empty";
+        } else {
+          if (regex2.test(email) === true) {
+            result2.style.color = "green";
+            result2.innerHTML = "Valid Email";
+          } else {
+            result2.style.color = "red";
+            result2.innerHTML = "Invalid Email";
+          }
+        }
+
+        let phone = document.getElementById("phone").value;
+        let result3 = document.getElementById("result3");
+        let regex3 = /^[6-9]\d{9}$/;
+        if (phone.length == 0) {
+          document.getElementById("result3").style.color = "red";
+          document.getElementById("result3").innerHTML =
+            "Mobile field cannot be empty";
+        } else {
+          if (regex3.test(phone) === true) {
+            result3.style.color = "green";
+            result3.innerHTML = "Valid PhoneNumber";
+          } else {
+            result3.style.color = "red";
+            result3.innerHTML = "Invalid PhoneNumber";
+          }
+        }
+
+        let city = document.getElementById("city").value;
+        let result4 = document.getElementById("result4");
+        if (city == 0) {
+          document.getElementById("result4").style.color = "red";
+          document.getElementById("result4").innerHTML =
+            "Please select city name";
+        } else {
+          result4.style.color = "green";
+            result4.innerHTML = "Valid CityName";
+        }
+
+        let gender1 = document.getElementById("gender1");
+        let gender2 = document.getElementById("gender2");
+        let result5 = document.getElementById("result5");
+        if(gender1.checked || gender2.checked)
+        {
+          result5.style.color = "green";
+            result5.innerHTML = "Valid Gender";
+        }
+        else{
+          document.getElementById("result5").style.color = "red";
+          document.getElementById("result5").innerHTML =
+            "Please select gender";
+        }
+       
+        let kannada = document.getElementById("kannada");
+        let english = document.getElementById("english");
+        let hindi = document.getElementById("hindi");
+
+        let result6 = document.getElementById("result6");
+        if(kannada.checked || english.checked || hindi.checked)
+        {
+          result6.style.color = "green";
+            result6.innerHTML = "Valid language";
+        }
+        else{
+          document.getElementById("result6").style.color = "red";
+          document.getElementById("result6").innerHTML =
+            "Please select language";
+        }
+        
+      }
+    </script>
+  </body>
+</html>

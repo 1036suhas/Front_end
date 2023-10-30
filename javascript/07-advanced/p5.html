@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>GENERATOR function</h1>
+    </center>
+    <hr>
+    <h2>JAVASCRIPT FUNCTIONS</h2>
+    <p>1) Local Function = function A(){}</p>
+    <p>1) Expresssion Function = let A= function (){}</p>
+    <p>1) Arrow Function = let A() => {}</p>
+
+
+    <script>
+        function A(){
+            let a=10, b=20, sum;
+            sum= a+b;
+
+            return sum;
+            return a;
+            console.log(sum);
+
+
+        }
+        document.write(A());
+
+        function* users(){
+
+            yield "suhas";
+            yield "naga";
+            yield "siddu";
+            yield "venky";
+
+        }
+
+        console.log('USERS FUNCTION =',users())
+        console.log('USERS TYPEOF =',typeof(users()))
+
+        for(let item of users()){
+            document.write(`<h3> ${item} </h3>`);
+        }
+    </script>
+</body>
+</html>

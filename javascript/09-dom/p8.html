@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <center>
+        <h1>dom</h1>
+    </center>
+    <hr>
+
+    <p>This is a paragraph of text.</p>
+    <div class="test">this is another paragraph of text.</div>
+    <p>this is one more paragraph of text.</p>
+
+    <script>
+        try {
+            document.write("<p>This is JS Paragraph..!</P>");
+                let mmatches = document.getElementsByTagName("p");
+                console.log(matches)
+        
+        document.write("<b>matches Type : </b>" + typeof(matches), "<br>");
+        document.write("<b>matches .length : </b>" + matches.length, "<br>");
+
+        for (let index = 0; index < matches.length; index++) {
+            matches[index].style.backgroundcolor ="red";
+
+        }
+
+        for (const key in matches) {
+            matches[key].style.color = "#fff";
+
+        }
+    }catch (error) { console.log(error.message);}
+    </script>
+
+</body>
+</html>

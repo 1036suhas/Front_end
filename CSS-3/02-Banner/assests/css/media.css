@@ -1,0 +1,33 @@
+/* MOBILE */
+@media(max-width:768px){
+    header{
+        background-color: skyblue;
+    }
+    header>nav>ul>li{
+        display: block;
+    }
+    header>nav>ul{
+        float: block;
+    }
+    header>nav>ul{
+        float: none;
+    }
+    header>nav{
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+/* TAB */
+@media(min-width:769px) and (max-width:1024px){
+    header{
+        background-color: blue;
+    }
+    header>nav>ul{
+        float: none;
+    }
+    header>nav{
+        padding: 20px;
+        text-align: center;
+    }
+}

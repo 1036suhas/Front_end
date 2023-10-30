@@ -1,0 +1,89 @@
+.cssColor1{
+    background-color: teal;
+    
+}
+.cssColor2{
+    background-color: rgb(135, 235, 147);
+}
+.cssColor3{
+    background-color: grey;
+}
+.commonCssColors{
+    color: white;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* p7.html */
+.jumbotron{
+    background-color: blue;
+    border-radius: 10px;
+
+}
+.cssFont{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    font-variant: small-caps;
+}
+
+/* p8.html */
+.cssText{
+    text-decoration: underline;
+    line-height: 2;
+    letter-spacing: 2px;
+    word-spacing: 20px;
+    text-transform: uppercase;
+    text-align: justify;
+    
+}
+.cssText>p{
+    text-indent: 100px;
+}
+
+/* p9.html */
+.navBar{
+    background-color: gray;
+}
+.navBar>ul{
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    float: right;
+}
+.navBar>ul>li{
+    display: inline-block;
+    padding: 20px;
+    
+}
+.navBar>ul>li:hover{
+    background-color: white;
+}
+.navBar>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+.navBar>ul>li:hover a{
+    color: gray;
+}
+.navBar>img{
+height: 54px;
+}
+/* p10.html */
+.list-marker-position>ol>li{
+    background-color: teal;
+    padding: 20px;
+    margin-bottom: 20px;
+    list-style-position:inside ;
+}
+.list-marker-position>ol>li>a{
+    color: white;
+    text-decoration: none;
+}
+.list-marker-position>ol.li::marker{
+    color: yellow;
+    font-size: 30px;
+    font-weight: bold;
+}
+

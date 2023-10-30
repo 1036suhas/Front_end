@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-5</title>
+    <style>
+        dialog{
+            /* display:block;*/
+            background-color: blue;
+            color: brown;
+            margin: 20px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h3>DETAILS TAG</h3>
+        <p>this tag is used to sepecify the additional details on the web page that the user can view or hide on demand</p>
+    </center>
+    <hr>
+    <center>
+        <h3>this is summary tag</h3>
+        <p>the <b>HTML SUMMARY</b>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, accusamus?
+        </p>
+    </center>
+    <hr>
+    <details>
+        <summary>HTML</summary>
+        <h1>HTML</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo error amet autem alias vero voluptates, illo deleniti tempora quo praesentium consequatur obcaecati deserunt eligendi, aut nisi id accusamus nostrum sunt!</p>
+    </details>
+
+    <details>
+        <summary>css</summary>
+        <h1>css</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, quas!</p>
+
+    </details>
+
+    <details>
+        <summary>js</summary>
+        <h1>js</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio distinctio consequatur reprehenderit accusamus. Placeat, facere reprehenderit.</p>
+    </details>
+    <hr>
+
+    <center>
+        <h3>
+            time tag..!
+        </h3>
+
+        <p><b>HTML TIME</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid dicta libero porro maiores fuga dolorum praesentium expedita.</p>
+    </center>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio nihil praesentium dolor officiis labore, aliquam sapiente nostrum necessitatibus incidunt, ab facilis qui, alias id natus?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora asperiores enim voluptates? Quae tempora doloremque id enim magnam! Debitis, <time>2.30</time> nulla ipsum inventore itaque laboriosam nostrum ipsa fuga aliquam repudiandae placeat?</p>
+
+    <hr>
+
+    <center>
+        <h3>this is dialog tag</h3>
+        <p><b>(this tag to create a new popup dialog on a webpage.)</b></p>
+    </center>
+    <hr>
+    <button type="button" id="openDialog">open Dialog</button>
+    <dialog id="dialogID">
+        <button type="button" id="closeDialog">&times;</button>
+        <h1>FULLSTACK..!</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam doloremque totam animi nesciunt ipsam temporibus.</p>
+    </dialog>
+    <script>
+document.getElementById("openDialog").onclick = function(){
+    document.getElementById("dialogID").show();
+
+};
+document.getElementById("closeDialog").onclick = function(){
+    document.getElementById("dialogID").close();
+};
+    </script>
+</body>
+</html>

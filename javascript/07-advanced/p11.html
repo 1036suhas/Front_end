@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVANCED</title>
+</head>
+<body>
+    <center>
+        <h1>Hosting</h1>
+        <p>Hosting is the default behaviour of moving all the declarations at the top of the scope before code execution.</p>
+    </center>
+    <hr>
+    
+    <h2>Function Hosting</h2>
+    <script>
+        sayHello();
+
+        function sayHello(){
+            document.write("<h1> Say Hello Function</h1>");
+        }
+    </script>
+    <h2>Vraiable hosting</h2>
+    <script>
+        str = "Hello world!";
+        alert(str);
+        var str;
+
+        alert(str1);
+        var str1;
+        str1 ="Hello World!";
+
+        var x= 5;
+        var y;
+        alert(x + "," +y);
+        y = 10;
+
+        var a =3;
+        b = 6;
+        alert(a + "," + b);
+        var b;
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJECT ORIENTED JAVASCRIPT</title>
+</head>
+<body>
+    <center>
+        <h1>Functions,arrays and objects and properties</h1>
+    </center>
+    <hr>
+
+    <script>
+        let user ={
+            'name': "suhas",
+            'email':'suhas@gmail.com',
+            'hobbies' : ['cooking'],
+            'getName' : function (){
+            return this.name;
+
+        },
+
+        "getEmail": () => {
+            document.write(`<h3> my email is = ${this.email} </h3>`);
+        },
+
+        'address': {
+            'city': "davanagere"
+            'pincode' : 577004
+        },
+        getAddress: function() {
+            return this.adress.city + ',pin=" _' + this.adress.picode;
+        }
+    };
+    document.write(`<h3> object = ${user.name}</h3>`);
+    document.write(`<h3> hobbies = ${user['hobbies']}</h3>`);
+
+    user.getName();
+    user.getEmail();
+
+    document.write(`<h3> address city = ${user.address.city}</h3>`);
+
+    </script>
+</body>
+</html>

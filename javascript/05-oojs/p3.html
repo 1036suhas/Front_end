@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oojs</title>
+</head>
+<body>
+    <center>
+        <h1>by creating instance of an object directly</h1>
+    </center>
+    <hr>
+
+    <strong>SYNTAX :</strong>
+    <pre>
+        let objectName = new constroctorMethod();
+    </pre>
+
+    <script>
+        let empDetails = new Object();
+        console.log(typeof empDetails);
+
+        empDetails.firstName ="suhas";
+        empDetails.lastName ="r";
+        empDetails.fullName= function(){return this.firstName + ""+ this .lastName}
+
+        document.write(empDetails.firstName+"<br>");
+        document.write(empDetails.lastName+"<br>");
+        document.write(empDetails.fullName()+"<br>");
+    </script>
+</body>
+</html>

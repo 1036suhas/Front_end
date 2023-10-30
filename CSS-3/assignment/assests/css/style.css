@@ -1,0 +1,33 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+img{
+    height: 200px;
+    
+}
+header>nav>ul>li{
+    display: inline;
+    padding: 50px;
+
+}
+header>nav>ul{
+    list-style-type: none;
+    float: right;
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 50px;
+    box-sizing: border-box;
+    background: orange;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0,0,0.5);
+    display: flex;
+}
+.box .img{
+    width: 150px;
+}

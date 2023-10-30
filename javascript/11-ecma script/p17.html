@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMA</title>
+</head>
+<body>
+    <center>
+        <h1>map() constroctor</h1>
+    </center>
+    <hr>
+
+    <script>
+        var x = new Map();
+
+        x.set("id",1235);
+        x.set("title", "javascript");
+        x.set("duration","1month");
+        console.log('set x =', x);
+
+        for(let item of x ) {
+            console.log(item);
+        }
+        for(let item of x.keys() ) {
+            console.log('key',item);
+        }
+
+        for(let [key,val] of x) {
+            console.log(`key = ${key} and value = ${val} `);
+        }
+
+
+    </script>
+</body>
+</html>

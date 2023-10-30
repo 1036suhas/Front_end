@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bom</title>
+</head>
+<body>
+    <center>
+        <h1>open and close</h1>
+    </center>
+    <button onclick="openWindow()">open window</button>
+    <button onclick="closeWindow()">close window</button>
+
+    <script>
+        let myWindow;
+        let windowProps = "width=300,height=300,top=200,left=300,toolbar=yes,scrollabel=yes,resizable=yes";
+
+        function openWindow(){
+            myWindow = window.open("https://youtube.com", windowProps);
+        }
+
+        function closeWindow(){
+            myWindow.close();
+        }
+    </script>
+</body>
+</html>

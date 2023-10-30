@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVANCED</title>
+</head>
+<body>
+    <center>
+        <h1>Removing Event Listner</h1>
+    </center>
+    <hr>
+    <button id="myBtn">Click Me</button>
+
+    <script>
+        function greetWorld() {
+            alert("hello world");
+        }
+
+        var btn = document.getElementById("myBtn");
+
+        btn.addEventListener("click", greetWorld);
+        btn.removeEventListener("click", greetWorld);
+    </script>
+</body>
+</html>

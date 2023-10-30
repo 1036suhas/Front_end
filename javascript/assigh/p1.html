@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>character checker</title>
+    <style>
+        center{
+            padding: 10px;
+            background-color: yellow;
+            color: red;
+
+        }
+        .parent{
+            padding: 50px;
+            background-color: gray;
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>check input character is alphabet digit or a special character</h1>
+    </center>
+    <hr>
+    <div class="parent">
+    <input type="text" id="inputField">
+    <button type="submit" onclick="charCheck()" id="name">submit</button>
+    <h1 id="result"></h1>
+    </div>
+    
+    <script>
+        function charCheck() {
+            var inputField = document.getElementById("inputField");
+            var inputValue = inputField.value;
+
+            if (inputValue.length ==10) {
+                document.getElementById("result").textContent = "the character should be maximum 10 only";
+            }
+            else {
+                var input_char = inputValue.charCodeAt(0);
+
+                if ((input_char >= 65 && input_char <=90) || (input_char >= 97 && input_char <=122))
+                {
+                    document.getElementById("result").textContent = "alphabet";
+                }
+                else if (input_char >= 48 && input_char <=57)
+                {
+                    document.getElementById("result").textContent = "digit";
+                }
+                    else
+                    {
+                        document.getElementById("result").textContent = "special character";
+                    }
+                }
+            }
+        
+    </script>
+</body>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <section id="blk"></section>
+    <hr>
+    <button type="button" onclick="addcontent()">Add Block</button>
+    <button type="button" onclick="removecontent()">Remove Content</button>
+
+    <script>
+        function addcontent(){
+            let content =` 
+            <h1>Welcome to js</h1>
+            <h3> sub title of js</h3>
+            <p> lorem isn bbg ,jiiyyj </p>
+            <button type="button" onclick="removeContent()">Remove Content </button>`;
+            
+            document.getElementById('blk').innerHTML = content;
+
+        }
+        function removecontent(){
+            document.getElementById('blk').innerHTML = "";
+
+        }
+
+    </script>
+</body>
+</html>

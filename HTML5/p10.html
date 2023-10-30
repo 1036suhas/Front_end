@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-5</title>
+</head>
+<>
+    <center>
+        <h1>this canvas tag</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus maxime eveniet deleniti esse in blanditiis optio incidunt, nostrum assumenda similique quisquam. Reprehenderit a debitis distinctio architecto autem eveniet nostrum atque?<b>HTML 5 canvas tag</b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, voluptatem.
+        </p>
+    </center>
+
+    <canvas>This is first canvas tag</canvas>
+    <canvas id="myCanvas2" width="300px" height="100px" style="border:2px solid red;"></canvas>
+    <p><b>Note:It is always necessary to specify the id attribute and the height and width attribute to define the size of the canvas.you can have multiple canvas elements on the html page.</b></p>
+    <hr>
+        <center>
+    <h3>
+        Drawing a Rect Angle on canvas
+    </h3>
+</center>
+
+    <canvas id="canvasRect" width="250" height="150" style="border:1px solid blue;"></canvas>
+
+    <script>
+        let canvasRect = document.getElementById("canvasRect") .getContext("2d");
+        canvasRect.fillStyle= "red";
+        canvasRect.fillRect(25,25,200,100);
+    </script>
+    <hr>
+
+    <center>
+        <h3>
+            Drawing a CIRCLE on canvas
+        </h3>
+    </center>
+    
+        <canvas id="myCanvasCircle" width="200" height="200" style="border:1px solid green;"></canvas>
+    
+        <script>
+            let myCanvasCircle = document.getElementById("myCanvasCircle") .getContext("2d");
+            myCanvasCircle.fillStyle= "yellow";
+            myCanvasCircle.arc(100,100,95,0,2*3.142);
+            myCanvasCircle.fill();
+        </script>
+        <hr>
+        <center>
+            <h3>
+                Drawing text on canvas
+            </h3>
+        </center>
+        
+            <canvas id="canvasText" width="578" height="200" style="border:1px solid teal;"></canvas>
+            <script>
+                let canvasText = document.getElementById("canvasText") .getContext("2d");
+                canvasText.font = "20pt Times New Roman";
+                canvasText.fillStyle = "blue";
+                canvasText.fillText('WELCOME TO CANVAS..!', 150, 100);
+            </script>
+            <hr>
+    
+    
+</body>
+</html>

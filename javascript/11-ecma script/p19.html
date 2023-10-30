@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMA</title>
+</head>
+<body>
+    <center>
+        <h1>object.defineproperty() in strict mode</h1>
+    </center>
+    <hr>
+
+    <script>
+        "use strict";
+
+        let user = {
+            name: "suhas"
+        };
+
+        Object.defineProperty(user, "age",{
+            value:30,
+            writable:true
+        });
+        console.log('age =',user.age);
+
+        try {
+            user.age=32;
+        } catch(error)
+    </script>
+</body>
+</html>

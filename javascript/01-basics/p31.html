@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-BASICS</title>
+</head>
+<body>
+    <center>
+        <h1>DataType Conversions</h1>
+    </center>
+    <hr>
+<script>
+    let str = "123";
+    document.write(typeof(str) + "<br>");
+
+    let num =Number(str) ;
+    document.write(typeof num + "<br>");
+
+    var number1 = Number("10.5");
+    document.write(typeof(number1)+"<br>");
+
+    var x = "123.343";
+    var y = '1245.642057';
+    var z ='apple';
+
+    document.write(`<h3> X Data type is = ${ typeof(x)} </h3>`);
+    document.write(`<h3> Y Data type is = ${ typeof(y)} </h3>`);
+    document.write(`<h3> Z Data type is = ${ typeof(z)} </h3>`);
+
+    var a = Number(x); 
+    document.write(`<h3> Number = ${ a} </h3>`);
+
+    var a1 = parseInt(x);
+    document.write(`<h3> parseInt = ${a1} </h3>`);
+
+    var a2 = parseFloat(x);
+    var a3 = parseFloat(y);
+
+    document.write(`<h3> parseFloat a2 = ${a2} </h3>`);
+    
+    document.write(`<h3> parseFloat a3 = ${a3} </h3>`);
+
+    let yy = 1245.677005;
+    document.write(`<h3> Y variable value is = ${ yy} </h3>`);
+    document.write(`<h3> Y variable value is = ${ yy.toFixed() } </h3>`);
+    document.write(`<h3> Y variable value is = ${ yy.toFixed(1) } </h3>`);
+    document.write(`<h3> Y variable value is = ${ yy.toFixed(2) } </h3>`);
+    document.write(`<h3> Y variable value is = ${ yy.toFixed(3) } </h3>`);
+    document.write(`<h3> Y variable value is = ${ yy.toFixed(4) } </h3>`);
+
+
+    Number(true)  //returns 1
+    Number(false) //returns 0
+    Number(null) //returns 0
+    Number(" 123 ") //returns 123
+    Number(" ") //returns 0
+    Number("") //returns 0
+    Number("123e-1")
+    Number("0xFF")
+    Number("undefined")
+    Number("null")
+    Number("Hello World!")
+</script>
+
+</body>
+</html>

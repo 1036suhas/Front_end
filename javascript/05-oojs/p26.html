@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOJS</title>
+</head>
+<body>
+    <center>
+        <h1>Object inheritance using ___proto__</h1>
+    </center>
+    <hr>
+
+
+    <script>
+        let user = {
+            name: "suhas",
+            email:"suhas@gmail.com"
+        };
+
+        console.log(`USER =`,user);
+
+        let user1 = {
+            mobile: "9535476986",
+            age: 23,
+            ____proto___:user
+        };
+
+        console.log(`USER1 =`,user1);
+
+
+    </script>
+</body>
+</html>

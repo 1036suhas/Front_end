@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Copnst</title>
+</head>
+<body>
+    <center>
+        <h1>Digital clock</h1>
+    </center>
+    <hr>
+
+    <h3 id="clock"></h3>
+    <script>
+        function DigitalClock(){
+            let clock = new Date();
+            document.querySelector("h3").innerHTML = clock.getHours() + ":" + clock.getMinutes() + ":"+ clock.getSeconds();
+
+        }
+        DigitalClock();
+
+        setInterval("DigitalClock()",1000);
+    </script>
+</body>
+</html>

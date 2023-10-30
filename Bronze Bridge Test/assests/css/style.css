@@ -1,0 +1,20 @@
+
+img{
+    height: 100px;
+}
+header>nav>ul>li{
+    display: inline;
+    padding: 50px;
+
+}
+header>nav>ul{
+    list-style-type: none;
+    float: right;
+}
+header{
+    background-color: aqua;
+}
+.banner5{
+    background: repeating-linear-gradient(45deg, yellow, red 50%);
+}
+

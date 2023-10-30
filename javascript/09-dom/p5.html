@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <center>
+        <h1>dom</h1>
+    </center>
+    <hr>
+    <h2 id="head"></h2>
+    <input type="text" name="name" id="name" placeholder="name">
+
+    <script>
+        let textBox = document.getElementById("name");
+        textBox.style.height="35px";
+        textBox.style.height="35px";
+        textBox.style.width="100%";
+        textBox.style.borderRadius="10px";
+        textBox.style.fontSize="20px";
+        textBox.style.color="grey";
+
+        console.log(textBox.getAttribute("id"));
+        console.log(textBox.getAttribute("title"));
+
+        textBox.setAttribute("title","THISIS A TITLE ATTR");
+        console.log(textBox.getAttribute("title"));
+
+        textBox.setAttribute("value","javascript DOM");
+        console.log(textBox.getAttribute("value"));
+
+    </script>
+</body>
+</html>

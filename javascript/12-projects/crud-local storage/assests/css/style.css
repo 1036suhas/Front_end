@@ -1,0 +1,112 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    transition: 0.5 ease-in-out;
+}
+:root{
+    --bgcolor: #f7be9f;
+    --tw:#fff;
+
+}
+.container{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+}
+.item{
+    padding: 20px;
+    width: 350px;
+    margin: 20px;
+    text-align: center;
+ box-shadow: rgba(0,0,0,0.16) 0px 1px  4px;
+}
+/* header */
+header{
+    background-color:var(--bgcolor);
+    padding: 20px;
+    color: var(--tw);
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:2px solid #f7be9f;
+    box-shadow: rgba(0,0,0,0.16) 0px 1px  4px;
+}
+header a{
+    background-color: var(--tw);
+    padding: 20px;
+    color: var(--bgcolor);
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid var(--tw);
+}
+header a:hover{
+    background-color: var(--bgcolor);
+    color: var(--tw);
+    border: 2px solid transparent;
+}
+/* card */
+.card{
+    padding: 0px 50px;
+}
+.card:hover{
+    transform: translateY(-5px);
+}
+.card img{
+    width:100% ;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    height: 200px;
+}
+.card p{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.card p:last-child{
+    margin-bottom: 0px;
+}
+.btn{
+    padding: 10px;
+    border: 2px solid var(--bgcolor);
+    color: var(--bgcolor);
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: var(--bgcolor);
+    color: var(--tw);
+    border: 2px solid var(--tw);
+}
+/* create.html */
+#usercontainer{
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+.userForm{
+    border: 2px solid var(--bgcolor);
+    box-shadow: rgba(0,0,0,0.16) 0px 1px  4px;
+    padding: 20px;
+    color: var(--bgcolor);
+    border-radius: 10px;
+}
+.userForm:hover{
+    background-color: var(--bgcolor);
+    color: var(--tw);
+}
+.userForm>.form-group{
+margin-bottom: 20px;
+}
+.userForm>.form-group:last-child{
+    margin-bottom: 0px;
+}
+.userForm>.form-group>.text-center{
+    text-align: center;
+}
+.userForm>.form-group>.form-control{
+    width: 100%;
+    padding: 5px 0px;
+    outline-color: var(--bgcolor);
+}
+

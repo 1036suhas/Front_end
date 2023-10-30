@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>dom</h1>
+    </center>
+    <hr>
+
+    <p id="pp" style="color:red; font-size: 20px;">This is a paragraph.</p>
+    <p>This is another paragraph</p>
+
+    <script>
+        let elem = document.querySelector("p");
+        document.write(elem.style.color,"<br");
+        document.write(elem.style.fontSize,"<br");
+        document.write(elem.style.fontStyle,"<br");
+
+        var styles = getComputedStyle(elem);
+        document.write(styles.getPropertyValue ("color"), "<br>");
+        document.write(styles.getPropertyValue ("font-size"), "<br>");
+        document.write(styles.getPropertyValue ("font-weight"), "<br>");
+        document.write(styles.getPropertyValue ("font-style"), "<br>");
+
+    </script>
+</body>
+</html>

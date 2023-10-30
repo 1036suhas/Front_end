@@ -1,0 +1,14 @@
+.banner{
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner>div{
+    background-color: red;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+
+}

@@ -1,0 +1,10 @@
+/* mobile */
+@media(max-width: 768px){
+    .container{
+        flex-flow: column;
+    }
+    .container h1{font-size: 30px;}
+    .container>.item{
+        width: 100%;
+    }
+}

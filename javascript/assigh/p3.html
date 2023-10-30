@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number of days in a month</title>
+    <link rel="stylesheet" href="assests/style.css">
+</head>
+<body>
+    <section class="banner">
+    <label for="month">Enter the month name:</label>
+    <input type="text" id="month">
+    <button type="button" onclick="calculateDays();">Submit</button>
+    <h1 id="result"></h1>
+    </section>
+    <script>
+        function calculateDays() {
+            
+            const monthInput = document.getElementById("month").value.trim().toLowerCase();
+            const monthToDays = {
+                jan: 31,feb: 28,mar: 31,apr: 30,may: 31,jun: 30,jul: 31,aug: 31,sep: 30,oct: 31,nov: 3,dec: 31
+            };
+
+            if (!(monthInput in monthToDays)) {
+                document.getElementById("result").textContent = "Invalid month name";
+                return;
+            }
+
+            const daysInMonth = monthToDays[monthInput];
+
+            document.getElementById("result").textContent = `Number of days in ${monthInput} is ${daysInMonth}`;
+        }
+    </script>
+</body>
+</html>

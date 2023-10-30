@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+<body>
+    <script>
+        function  getURL (){
+            alert("The URL of The Page is :"+ window.location.href);
+        }
+    </script>
+    
+    <button type="button" onclick="getURL();">Get Page URL</button>
+
+    <script>
+        document.write("<br>"+ window.location.protocol + "<br>");
+        
+
+        document.write(window.location.host + "<br>");
+
+        document.write(window.location.hostname + "<br>");
+        
+        document.write(window.location.port + "<br>");
+
+        document.write(window.location.pathname + "<br>");
+
+    </script>
+</body>
+</html>

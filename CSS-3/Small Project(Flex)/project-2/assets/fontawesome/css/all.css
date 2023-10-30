@@ -1,0 +1,110 @@
+/* Mobile Version */
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@media(max-width:768px){
+    .banner{
+        background: linear-gradient(rgba(55, 57, 69, 0.8), rgba(55, 57, 69, 0.8)), url(../images/mob.jpg)no-repeat center;
+        background-size: 100%;
+        height: 100%;
+    }
+    .banner>header>nav>ul>li{display: block;}
+    .banner>header>nav>ul{float: none;}
+    .banner>header>nav{text-align: center;}
+    .searchbar{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        padding-bottom: 150px;
+    }
+    .searchbar>:first-child{
+        width: 300px;
+        border-radius: 0px 0px 0px 0px;
+        margin: auto;
+    }
+    .searchbar>:nth-child(2){
+        width: 260px;
+        margin: auto;
+    }
+    .searchbar>:nth-child(3){
+        width: 300px;
+        margin: auto;
+    }
+    .searchbar>button:last-child{
+        width: 300px;
+        border-radius: 0px 0px 0px 0px;
+        height: 60px;
+        margin: auto;
+    }
+    .icons-container{
+        display: flex;
+        flex-flow: row wrap;
+        margin: 2px;
+        margin: auto;
+    }
+    /* SECOND PAGE */
+    .body{
+        display: flex;
+        flex-flow: row wrap;
+        margin: auto;
+    }
+
+    /* MENU */
+    .menu2{
+        display: block;
+        flex-flow: row nowrap;
+        margin: auto;
+    }
+    .menu2>img{
+        display: block;
+        margin: 20px auto;
+    }
+    .line2>button{
+        bottom: 50px;
+    }
+
+    /* FINAL */
+    .final{
+        display: block;
+        margin: auto;
+        align-content: flex-start;
+    }
+    .final3>h1>p{
+        left: 50px;
+    }
+    .complet{
+        float: none;
+        display: block;
+    }
+}
+
+/* Tablet Version */
+@media(min-width:769px) and (max-width:1200px){
+    .banner{
+        background: linear-gradient(rgba(55, 57, 69, 0.8), rgba(55, 57, 69, 0.8)), url(../image/Tab2.jpg)no-repeat center;
+    }
+    .banner>header>nav>ul{float: none;}
+    .banner>header>nav{text-align: center;}
+    .icons-container{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    /* SECOND PAGE */
+    .body{
+        display: flex;
+        flex-flow: row wrap;
+    }
+     /* MENU */
+    .menu2{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .line2>button{
+        bottom: 50px;
+    }
+
+    /* FINAL */
+       .final{
+        display: flex;
+        margin: auto;
+    }
+}

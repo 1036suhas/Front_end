@@ -1,0 +1,26 @@
+SYSTEM REQUIREMENTS
+1.NodeJS
+    - install it for free
+
+    - node -v
+    v20.9.0
+
+2.npm version
+    node package manager
+    10.1.0
+
+3.powerful editor.
+   - visual studio code
+    free
+    -subline text
+    -intellij
+
+4.browser
+    -chrome ->DevTools -> Recomendation
+    Edge
+    Firefox
+
+5.create-react-app
+    Starting point of learning
+
+    npx create-react-app appName or project name

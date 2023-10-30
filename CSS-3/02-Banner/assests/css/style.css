@@ -1,0 +1,108 @@
+/* p1.banner */
+img{
+    height: 100px;
+}
+header>nav>ul>li{
+    display: inline;
+    padding: 50px;
+
+}
+header>nav>ul{
+    list-style-type: none;
+    float: right;
+}
+header{
+    background-color: aqua;
+}
+
+/* p2.html */
+.commonBanner{
+    height: 400px;
+    text-align: center;
+    color: azure;
+    padding: 20px;
+}
+.commonBanner>div{
+    background-color: rgba(0,0,0,0.3);
+    padding: 30px;
+    line-height: 2;
+    display: inline-block;
+    box-shadow: -3px -3px 3px black, 3px 3px 3px black;
+}
+.commonBanner>div>h1{
+    font-size: 60px;
+    text-shadow: -3px -3px 3px #000, 3px 3px 3px #000;
+}
+.banner1{
+    background-color: teal;
+}
+
+/* P3.HTML */
+.banner2{
+    background-image: url(../images/desk.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* P4.HTML */
+.banner3{
+    background: linear-gradient(45deg, yellow, red);
+}
+
+/* P5.HTML */
+.banner4{
+    background: repeating-linear-gradient(45deg, yellow, red 50%);
+}
+/* P6.HTML */
+.banner5{
+    background: url(../images/desk.jpg) no-repeat left,url(../images/tab.jpg) no-repeat right,url(../images/mobile.jpg) no-repeat center;
+    background-size: 40%;
+}
+/* P7.HTML */
+.banner6{
+    background: linear-gradient(rgba(255, 165, 0,0.6), rgba(255, 255, 255,0.6), rgba(0, 128, 0,0.6) ),
+    url(../images/desk.jpg) no-repeat center,url(../images/mobile.jpg);
+background-size: 50%;
+}
+/* P8.HTML */
+.banner7{
+position: center;
+top:20%;
+left:0%;
+width: 20%;
+padding: 20%;
+}
+
+/* P9.HTML */
+.banner8{
+    background: -o-linear-gradient(black, green);
+    background: -moz-linear-gradient(black,red);
+    background: -webkit-linear-gradient(yellow, red);
+    background: linear-gradient(orange, white, green);
+}
+/* P10.HTML */
+.banner9{
+    background-color: gray;
+    text-align: left;
+    line-height: 2;
+}
+.common{
+    height: 400px;
+    width: 300px #ccc;
+    margin: 30px;
+    padding: 30px;
+}
+.example-1{
+    background: radial-gradient(orange, white, gold);
+}
+
+.example-2{
+    background: radial-gradient(circle, purple, white, tomato);
+}
+.example-3{
+    background: radial-gradient(circle farthest-side, orange, white, gold);
+}
+
+.example-4{
+    background: repeating-radial-gradient(purple, white, tomato);
+}

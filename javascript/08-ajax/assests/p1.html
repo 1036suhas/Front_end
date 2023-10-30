@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+   <script src="assests/js/script.js"></script> 
+</head>
+<body>
+    <center>
+        <h1>AJAX</h1>
+        <p>Asynchronous JAVASCRIPT and XML , or AJAX, is  not a tech in itself</p>
+    </center>
+    <h3>External js function execution using call back</h3>
+    <p>Asynchronous code allows the program execution immediatly.</p>
+    <p>Asynchronous pgm allows u 2 perform multiple requests</p>
+
+    <script>
+        function loadScript(path,callback){
+            let script = document.createElement("script");
+            script.src = path;
+            script.onload = () => callback();
+            document.head.append(script);
+
+        }
+        loadScript("assests/js/script.js",function(){sum(300,400);});
+    </script>
+</body>
+</html>

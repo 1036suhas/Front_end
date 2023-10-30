@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+<body>
+    <script>
+        var message = "hi there! Click To Continue.";
+        alert(message);
+
+        var result = confirm("are u sure?");
+        if(result) {
+            document.write("you clicked ok button!");
+
+        }else {
+            document.write("you clicked cancel button!");
+
+        }
+        var name = prompt ("whats your name?");
+        if (name.length > 0 && name !="null") {
+            document.write("hi," + name);
+
+        } else {
+            document.write("anonymous");
+        }
+    </script>
+</body>
+</html>
